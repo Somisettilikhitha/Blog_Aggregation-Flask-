@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Category Pages</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Set the background color */
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            text-align:center;
+           
+        }
+        h1{
+            text-align:center;
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Categories</h1>
+    <ul>
+        <li>
+            <a href="{{ url_for('c_category') }}">
+                <img src="{{ url_for('static', filename='c pro.png') }}" alt="C Category">
+            </a>
+        </li>
+        <li>
+            <a href="{{ url_for('python_category') }}">
+                <img src="{{ url_for('static', filename='python.jpg') }}" alt="Python Category">
+            </a>    
+        </li>
+        <li>
+            <a href="{{ url_for('java_category') }}">
+                <img src="{{ url_for('static', filename='java.png') }}" alt="Java Category">
+            </a>
+        </li>
+        <li>
+            <a href="{{ url_for('sports_category') }}">
+                <img src="{{ url_for('static', filename='sports.jpg') }}" alt="Sports Category">
+            </a>
+        </li>
+        <li>
+            <a href="{{ url_for('politics_category') }}">
+                <img src="{{ url_for('static', filename='politics.jpg') }}" alt="Politics Category">
+            </a>
+        </li>
+    </ul>
+</body>
+
+</html>
